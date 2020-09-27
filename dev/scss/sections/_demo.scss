@@ -2,8 +2,23 @@
     Demo
 ============= */
 
-.purple-box{
+.box{
+    border-radius: 50px;
     height: 200px;
     width: 200px;
+}
+.purple-box{
     background-color: $purple;
+}
+
+.orange-box{
+    background-color: $orange;
+}
+
+.magenta-box{
+    background-color: $magenta;
+}
+
+.yellow-box{
+    background-color: $yellow;
 }

@@ -9,5 +9,14 @@ import {gsap} from "gsap";
 
 var timeOfAnimation = 3;
 
-gsap.to(".purple-box",{duration: timeOfAnimation,borderRadius: "20"});
-gsap.to(".red-box",{duration: timeOfAnimation, rotation:360, repeat:3, delay:timeOfAnimation });
+gsap.from(".purple-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
+gsap.to(".purple-box",{duration: timeOfAnimation, rotation: 360, y: 250, alpha: 0.75, delay: timeOfAnimation});
+
+gsap.from(".orange-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
+gsap.to(".orange-box",{duration: timeOfAnimation, rotation: 360, y: 100, alpha: 0.75, delay: timeOfAnimation});
+
+gsap.from(".magenta-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
+gsap.to(".magenta-box",{duration: timeOfAnimation, rotation: 360, y: 175, alpha: 0.75, delay: timeOfAnimation});
+
+gsap.from(".yellow-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
+gsap.to(".yellow-box",{duration: timeOfAnimation, rotation: 360, y: 25, alpha: 0.75, delay: timeOfAnimation});

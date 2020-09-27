@@ -379,7 +379,19 @@ textarea {
 /* =============
     Demo
 ============= */
-.purple-box {
+.box {
+  border-radius: 50px;
   height: 200px;
-  width: 200px;
+  width: 200px; }
+
+.purple-box {
   background-color: #693372; }
+
+.orange-box {
+  background-color: #ffa500; }
+
+.magenta-box {
+  background-color: #880e4f; }
+
+.yellow-box {
+  background-color: #ffea61; }
