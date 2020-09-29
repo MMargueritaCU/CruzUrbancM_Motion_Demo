@@ -5,18 +5,17 @@ import {gsap} from "gsap";
     Demo Script
 ----------------- */
 
-// gsap call / what do you want to animate / how long should it animate / what should change?
+// var timeOfAnimation = 3;
 
-var timeOfAnimation = 3;
+// var boxAnimationTL = gsap.timeline();
 
-gsap.from(".purple-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
-gsap.to(".purple-box",{duration: timeOfAnimation, rotation: 360, y: 250, alpha: 0.75, delay: timeOfAnimation});
+// boxAnimationTL.from(".purple-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5}, "startBoxes")
+//             .from(".orange-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5}, "startBoxes")
+//             .from(".magenta-box",{duration: timeOfAnimation, rotation: -360, x: 500, scale: 0.5}, "startBoxes")
+//             .from(".yellow-box",{duration: timeOfAnimation, rotation: -360, x: 500, scale: 0.5}, "startBoxes")
+            
 
-gsap.from(".orange-box",{duration: timeOfAnimation, rotation: 360, x: 500, scale: 0.5});
-gsap.to(".orange-box",{duration: timeOfAnimation, rotation: 360, y: 100, alpha: 0.75, delay: timeOfAnimation});
-
-gsap.from(".magenta-box",{duration: timeOfAnimation, rotation: -360, x: 500, scale: 0.5});
-gsap.to(".magenta-box",{duration: timeOfAnimation, rotation: -360, y: -225, alpha: 0.75, delay: timeOfAnimation});
-
-gsap.from(".yellow-box",{duration: timeOfAnimation, rotation: -360, x: 500, scale: 0.5});
-gsap.to(".yellow-box",{duration: timeOfAnimation, rotation: -360, y: -225, alpha: 0.75, delay: timeOfAnimation});
+//             .to(".purple-box",{duration: timeOfAnimation, rotation: 360, y: 250, alpha: 0.75}, "startBoxes2")
+//             .to(".orange-box",{duration: timeOfAnimation, rotation: 360, y: 100, alpha: 0.75}, "startBoxes2")
+//             .to(".magenta-box",{duration: timeOfAnimation, rotation: -360, y: -225, alpha: 0.75}, "startBoxes2")
+//             .to(".yellow-box",{duration: timeOfAnimation, rotation: -360, y: -225, alpha: 0.75}, "startBoxes2");
