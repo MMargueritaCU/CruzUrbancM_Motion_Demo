@@ -1,3 +1,26 @@
 /* =============
     Footer
 ============= */
+#footer{
+    background-color: $olive-green;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". footer .";
+    padding-top: 20px;
+    color: $white;
+
+    >div{
+        grid-area: footer;
+        section{
+            >article{
+                @include md{
+                    text-align: center;
+                }
+            }
+
+            >div{
+                text-align: right;
+            }
+        }
+    }
+}

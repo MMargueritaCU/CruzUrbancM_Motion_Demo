@@ -19,6 +19,103 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/palette_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/palette_logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/header/palette_green.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/palette_green.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-1/frida_kahlo_hero.jpg": {
+		"ft": 16384,
+		"iS": 312851,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/frida_kahlo_hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-2/frida_painting.jpg": {
+		"ft": 16384,
+		"iS": 98957,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/frida_painting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/frida_heart_transplant.jpg": {
+		"ft": 16384,
+		"iS": 278717,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/frida_heart_transplant.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/frida_broken_spine.jpg": {
+		"ft": 16384,
+		"iS": 55667,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/frida_broken_spine.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/frida_hospital.jpg": {
+		"ft": 16384,
+		"iS": 38843,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/frida_hospital.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/frida_sunburst_painting.jpg": {
+		"ft": 16384,
+		"iS": 100790,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/frida_sunburst_painting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/frida_portrait.jpg": {
+		"ft": 16384,
+		"iS": 38141,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/frida_portrait.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -38,12 +135,60 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/demo.kit": {
+	"/dev/content/section-1.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/demo.html",
+		"oAP": "/dev/content/section-1.html",
+		"oF": 0
+		},
+	"/dev/content/section-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-2.html",
+		"oF": 0
+		},
+	"/dev/content/section-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-3.html",
+		"oF": 0
+		},
+	"/dev/content/section-4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-4.html",
+		"oF": 0
+		},
+	"/dev/content/section-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-5.html",
+		"oF": 0
+		},
+	"/dev/content/section-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-6.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -54,11 +199,19 @@
 		"oAP": "/dev/global/head.html",
 		"oF": 0
 		},
-	"/dev/global/scripts.kit": {
+	"/dev/global/header.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
+		"oAP": "/dev/global/header.html",
+		"oF": 0
+		},
+	"/dev/global/scripts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
 		},
@@ -70,61 +223,6 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/animationSpeed.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/animationSpeed-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/demo.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/demo-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/magentaBox.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/magentaBox-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/orangeBox.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/orangeBox-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/purpleBox.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/purpleBox-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/scripts.js": {
 		"bF": 4,
 		"ft": 64,
@@ -133,17 +231,6 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/yellowBox.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/yellowBox-min.js",
-		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -277,7 +364,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_demo.scss": {
+	"/dev/scss/sections/_section-1.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -285,7 +372,72 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_demo.css",
+		"oAP": "/dev/scss/sections/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-2.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-3.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-4.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-4.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-5.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-5.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-6.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-6.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

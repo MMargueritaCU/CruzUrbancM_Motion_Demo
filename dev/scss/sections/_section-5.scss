@@ -1,0 +1,79 @@
+/* =============
+    Section 5
+============= */
+
+#section-5{
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-5 .";
+    padding-bottom: 30px;
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+   >div{
+        grid-area: section-5;
+        ul{
+
+            display: grid;
+            grid-gap: 20px;
+
+            @include md{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                    "gallery-1 gallery-1"
+                    "gallery-2 gallery-3";
+            }
+
+            @include xl{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas:
+                    "gallery-1 gallery-2"
+                    "gallery-1 gallery-3";
+            }
+
+            li{
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+            }
+
+            #gallery-1{
+                background-image: url('../img/section-5/frida_hospital.jpg');
+            
+                @include md{
+                    grid-area: gallery-1;
+                    height:1000px;
+                }
+
+                @include xl{
+                    grid-area: gallery-1;
+                    height: 100%;
+                }
+            }
+
+            #gallery-2{
+                background-image: url('../img/section-5/frida_broken_spine.jpg');
+                @include md{
+                    grid-area: gallery-2;
+                }
+
+                @include xl{
+                    grid-area: gallery-2;
+                }
+            }
+
+            #gallery-3{
+                background-image: url('../img/section-5/frida_sunburst_painting.jpg');
+                @include md{
+                    grid-area: gallery-3;
+                }
+
+                @include xl{
+                    grid-area: gallery-3;
+                }
+            }
+        }
+    }
+}

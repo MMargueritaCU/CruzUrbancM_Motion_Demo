@@ -317,37 +317,62 @@ template {
 /* =============
     Base
 ============= */
+a {
+  text-decoration: none;
+  transition: 0.25s; }
+
 figure {
-  margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 ul {
-  margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   ul li {
     list-style: none; }
 
+.show-for-medium {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-medium {
+      display: block; } }
+.show-for-large {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-large {
+      display: block; } }
 .container-grid {
   display: grid;
+  grid-template-columns: auto 1200px auto;
   grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh; }
-  @media (min-width: 1200px) {
-    .container-grid {
-      grid-template-columns: auto 1200px auto; } }
-  .container-grid > div {
-    grid-area: grid-content; }
+  min-height: 100vh; }
+  .container-grid .grid-content {
+    grid-area: grid-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /* =============
     Typography
 ============= */
 h1, h2, h3, h4 {
+  font-family: 'Lobster Two', cursive;
   margin: 0;
   padding: 0; }
 
 p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   margin: 0;
   padding: 0; }
+
+a {
+  font-family: 'Ubuntu', sans-serif; }
+
+.section-title {
+  font-weight: 300; }
 
 /* =============
     Buttons
@@ -370,28 +395,337 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #505906; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #000; }
+
 /* =============
     Header
 ============= */
+#header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  #header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 20% auto; }
+    @media (min-width: 992px) {
+      #header > div {
+        grid-template-areas: "nav logo"; } }
+    #header > div section,
+    #header > div nav {
+      padding: 20px; }
+    #header > div #logo-container {
+      grid-area: logo;
+      padding: 10px;
+      display: flex; }
+      @media (min-width: 992px) {
+        #header > div #logo-container {
+          justify-content: flex-end; } }
+      #header > div #logo-container a:link,
+      #header > div #logo-container a:visited {
+        color: #505906; }
+      #header > div #logo-container a:hover,
+      #header > div #logo-container a:active {
+        color: #000; }
+    #header > div #burger-container {
+      align-items: center;
+      color: #505906;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end; }
+      @media (min-width: 992px) {
+        #header > div #burger-container {
+          display: none !important; } }
+      #header > div #burger-container i {
+        cursor: pointer; }
+    #header > div #nav-container {
+      grid-area: nav;
+      display: none; }
+      @media (min-width: 992px) {
+        #header > div #nav-container {
+          display: block !important; } }
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #505906;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". footer .";
+  padding-top: 20px;
+  color: #fff; }
+  #footer > div {
+    grid-area: footer; }
+    @media (min-width: 768px) {
+      #footer > div section > article {
+        text-align: center; } }
+    #footer > div section > div {
+      text-align: right; }
+
 /* =============
-    Demo
+    Section 1
 ============= */
-.box {
-  border-radius: 50px;
-  height: 200px;
-  width: 200px; }
+#section-1 {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". header .";
+  width: 100%; }
+  #section-1 > section {
+    grid-area: header;
+    background-image: url("../img/section-1/frida_kahlo_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 371px; }
+    @media (min-width: 768px) {
+      #section-1 > section {
+        height: 512px; } }
+    @media (min-width: 1200px) {
+      #section-1 > section {
+        background-position: top;
+        height: 800px; } }
+    #section-1 > section h1 {
+      color: #fff;
+      font-size: 3rem;
+      line-height: 3.75rem;
+      padding-top: 200px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        #section-1 > section h1 {
+          font-size: 4.3125rem;
+          line-height: 5.375rem;
+          padding-top: 250px;
+          padding-left: 50px;
+          text-align: left; } }
+      @media (min-width: 1200px) {
+        #section-1 > section h1 {
+          font-size: 5.6875rem;
+          line-height: 7.125rem;
+          padding-top: 300px; } }
+/* =============
+    Section 2
+============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-2 .";
+  padding-top: 70px;
+  padding-bottom: 150px; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      grid-template-columns: auto 1200px auto; } }
+  #section-2 > div {
+    grid-area: section-2; }
+    #section-2 > div #section-2-inside {
+      height: 600px; }
+      @media (min-width: 768px) {
+        #section-2 > div #section-2-inside {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "aside article"; } }
+      #section-2 > div #section-2-inside #article {
+        padding-bottom: 50px;
+        text-align: center; }
+        #section-2 > div #section-2-inside #article h2 {
+          border-top: 3px solid #505906;
+          font-size: 1.5625rem;
+          line-height: 1.75rem;
+          padding-top: 10px;
+          padding-bottom: 5px; }
+          @media (min-width: 768px) {
+            #section-2 > div #section-2-inside #article h2 {
+              font-size: 2.1875rem;
+              line-height: 2.1875rem; } }
+        #section-2 > div #section-2-inside #article p {
+          border-bottom: 3px solid #505906;
+          font-size: 1rem;
+          line-height: 1.5625rem;
+          padding-top: 5px;
+          padding-bottom: 10px; }
+          @media (min-width: 768px) {
+            #section-2 > div #section-2-inside #article p {
+              font-size: 1.125rem;
+              line-height: 1.875rem; } }
+        @media (min-width: 768px) {
+          #section-2 > div #section-2-inside #article {
+            grid-area: article;
+            padding-top: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left; } }
+      #section-2 > div #section-2-inside #aside {
+        background-image: url("../img/section-2/frida_painting.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 550px; }
+        @media (min-width: 768px) {
+          #section-2 > div #section-2-inside #aside {
+            grid-area: aside; } }
+/* =============
+    Section 3
+============= */
+#section-3 {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". section-3 ."; }
+  @media (min-width: 1200px) {
+    #section-3 {
+      background-position: top; } }
+  #section-3 > div {
+    grid-area: section-3;
+    background-image: url("../img/section-3/frida_heart_transplant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-bottom: 20px; }
 
-.purple-box {
-  background-color: #693372; }
-
-.orange-box {
-  background-color: #ffa500; }
-
-.magenta-box {
-  background-color: #880e4f; }
-
-.yellow-box {
-  background-color: #ffea61; }
+/* =============
+    Section 4
+============= */
+#section-4 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-4 .";
+  padding-bottom: 25px; }
+  @media (min-width: 768px) {
+    #section-4 {
+      grid-template-columns: 10% auto 10%; } }
+  @media (min-width: 992px) {
+    #section-4 {
+      grid-template-columns: auto 750 auto; } }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: 25% auto 25%; } }
+  #section-4 > div {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    grid-area: section-4;
+    text-align: center; }
+    #section-4 > div article h3 {
+      color: #505906;
+      font-size: 1.6875rem;
+      line-height: 2.3125rem;
+      padding: 10px 0; }
+      @media (min-width: 768px) {
+        #section-4 > div article h3 {
+          font-size: 2.375rem;
+          line-height: 3.125rem; } }
+      @media (min-width: 1200px) {
+        #section-4 > div article h3 {
+          font-size: 3.25rem;
+          line-height: 3.875rem; } }
+/* =============
+    Section 5
+============= */
+#section-5 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-5 .";
+  padding-bottom: 30px; }
+  @media (min-width: 1200px) {
+    #section-5 {
+      grid-template-columns: auto 1200px auto; } }
+  #section-5 > div {
+    grid-area: section-5; }
+    #section-5 > div ul {
+      display: grid;
+      grid-gap: 20px; }
+      @media (min-width: 768px) {
+        #section-5 > div ul {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+      @media (min-width: 1200px) {
+        #section-5 > div ul {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+      #section-5 > div ul li {
+        background-size: cover;
+        background-position: center;
+        height: 500px; }
+      #section-5 > div ul #gallery-1 {
+        background-image: url("../img/section-5/frida_hospital.jpg"); }
+        @media (min-width: 768px) {
+          #section-5 > div ul #gallery-1 {
+            grid-area: gallery-1;
+            height: 1000px; } }
+        @media (min-width: 1200px) {
+          #section-5 > div ul #gallery-1 {
+            grid-area: gallery-1;
+            height: 100%; } }
+      #section-5 > div ul #gallery-2 {
+        background-image: url("../img/section-5/frida_broken_spine.jpg"); }
+        @media (min-width: 768px) {
+          #section-5 > div ul #gallery-2 {
+            grid-area: gallery-2; } }
+        @media (min-width: 1200px) {
+          #section-5 > div ul #gallery-2 {
+            grid-area: gallery-2; } }
+      #section-5 > div ul #gallery-3 {
+        background-image: url("../img/section-5/frida_sunburst_painting.jpg"); }
+        @media (min-width: 768px) {
+          #section-5 > div ul #gallery-3 {
+            grid-area: gallery-3; } }
+        @media (min-width: 1200px) {
+          #section-5 > div ul #gallery-3 {
+            grid-area: gallery-3; } }
+/* =============
+    Section 6
+============= */
+#section-6 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-6 .";
+  padding-bottom: 15px; }
+  @media (min-width: 768px) {
+    #section-6 {
+      grid-template-columns: 10% auto 10%;
+      padding: 10px 0 20px; } }
+  @media (min-width: 1200px) {
+    #section-6 {
+      grid-template-columns: auto 1200px auto;
+      padding-top: 10px; } }
+  #section-6 > div {
+    grid-area: section-6; }
+    @media (min-width: 1200px) {
+      #section-6 > div {
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-template-areas: "portrait paragraph"; } }
+    #section-6 > div #portrait {
+      text-align: center; }
+      @media (min-width: 1200px) {
+        #section-6 > div #portrait {
+          grid-area: portrait;
+          padding-top: 20px;
+          padding-bottom: 50px; } }
+    #section-6 > div #paragraph {
+      text-align: justify; }
+      @media (min-width: 768px) {
+        #section-6 > div #paragraph {
+          padding-top: 20px;
+          padding-bottom: 20px; } }
+      @media (min-width: 1200px) {
+        #section-6 > div #paragraph {
+          grid-area: paragraph;
+          padding-top: 120px; } }

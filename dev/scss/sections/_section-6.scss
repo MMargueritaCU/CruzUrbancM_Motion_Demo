@@ -1,0 +1,51 @@
+/* =============
+    Section 6
+============= */
+
+#section-6{
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-6 .";
+    padding-bottom: 15px;
+
+    @include md{
+        grid-template-columns: 10% auto 10%;
+        padding: 10px 0 20px;
+    }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        padding-top: 10px;
+    }
+
+    >div{
+        grid-area: section-6;
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 35% auto;
+            grid-template-areas: "portrait paragraph";
+        }
+
+        #portrait{
+            text-align: center;
+            @include xl{
+                grid-area: portrait;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+        }
+
+        #paragraph{
+            text-align: justify;
+            @include md{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            @include xl{
+                grid-area: paragraph;
+                padding-top: 120px;
+            }
+        }
+    }
+} 

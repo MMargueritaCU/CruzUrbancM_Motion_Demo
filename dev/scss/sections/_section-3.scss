@@ -1,0 +1,24 @@
+/* =============
+    Section 3
+============= */
+
+#section-3{
+    display: grid;
+    grid-template-columns: 0px auto 0px;
+    grid-template-areas: ". section-3 .";
+
+    @include xl{
+        background-position: top;
+    }
+
+    >div{
+        grid-area: section-3;
+        background-image: url('../img/section-3/frida_heart_transplant.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 700px;
+        margin-bottom: 20px;
+    }
+
+}
