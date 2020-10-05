@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 0px auto 0px;
     grid-template-areas: ". header .";
+    overflow: hidden;
     width: 100%;
 
     >section{

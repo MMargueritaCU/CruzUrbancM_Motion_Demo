@@ -423,7 +423,8 @@ textarea {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   #header > div {
     display: grid;
     grid-template-areas: "logo burger" "nav nav";
@@ -489,6 +490,7 @@ textarea {
   display: grid;
   grid-template-columns: 0px auto 0px;
   grid-template-areas: ". header .";
+  overflow: hidden;
   width: 100%; }
   #section-1 > section {
     grid-area: header;
