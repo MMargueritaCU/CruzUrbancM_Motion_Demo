@@ -14,7 +14,7 @@ export function section3Animation(){
         toggleActions: "restart none reverse none",
         trigger: "#section-3",
         scrub: 1,
-        start: "top, 50%",
-        end: "bottom 50%"
+        start: "top, 80%",
+        end: "bottom 100%"
     });
 }
