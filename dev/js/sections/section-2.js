@@ -6,8 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 const section2TL = gsap.timeline();
 
 section2TL.from("#section-2-inside aside", {duration: 1, alpha: 0, x: -300})
-        .from("#article h2", {duration: 1, alpha: 0, x: -300}, "startAnimation-2")
-        .from("#article p", {duration: 1, alpha: 0, x: 300}, "startAnimation-2")
+        .from("#article h2", {duration: 1, alpha: 0, x: -300})
+        .from("#article p", {duration: 1, alpha: 0, x: 300})
 
 export function section2Animation(){
     ScrollTrigger.create({
@@ -16,7 +16,7 @@ export function section2Animation(){
         toggleActions: "restart none reverse none",
         trigger: "#section-2",
         scrub: 1,
-        start: "top, 80%",
-        end: "bottom 100%"
+        start: "top, 50%",
+        end: "bottom 50%"
     });
 }
