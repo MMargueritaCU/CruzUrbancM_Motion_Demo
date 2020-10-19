@@ -379,19 +379,22 @@ textarea {
 /* =============
     Demo
 ============= */
-.box {
-  border-radius: 50px;
-  height: 200px;
-  width: 200px; }
-
-.purple-box {
-  background-color: #693372; }
-
-.orange-box {
-  background-color: #ffa500; }
-
-.magenta-box {
-  background-color: #880e4f; }
-
-.yellow-box {
-  background-color: #ffea61; }
+#demo {
+  display: grid;
+  grid-template-columns: auto 90% auto;
+  grid-template-areas: ". demo ."; }
+  @media (min-width: 768px) {
+    #demo {
+      grid-template-columns: auto 80% auto; } }
+  @media (min-width: 992px) {
+    #demo {
+      grid-template-columns: auto 50% auto; } }
+  #demo > div {
+    grid-area: demo;
+    border: 3px solid #880e4f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #demo > div svg {
+      border: 2px solid #000000; }

@@ -1,24 +1,30 @@
 /* =============
     Demo
 ============= */
+#demo{
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: ". demo .";
 
-.box{
-    border-radius: 50px;
-    height: 200px;
-    width: 200px;
-}
-.purple-box{
-    background-color: $purple;
-}
+    @include md{
+        grid-template-columns: auto 80% auto;
+    }
 
-.orange-box{
-    background-color: $orange;
-}
+    @include lg{
+        grid-template-columns: auto 50% auto;
+    }
 
-.magenta-box{
-    background-color: $magenta;
-}
+    >div{
+        grid-area: demo;
+        border: 3px solid $magenta;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.yellow-box{
-    background-color: $yellow;
+        svg{
+            border: 2px solid #000000;
+            // width: 100%;
+        }
+    }
 }
