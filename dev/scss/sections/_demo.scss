@@ -16,15 +16,14 @@
 
     >div{
         grid-area: demo;
-        border: 3px solid $magenta;
+        // border: 3px solid $magenta;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
 
         svg{
-            border: 2px solid #000000;
-            // width: 100%;
+            // border: 2px solid #000000;
         }
     }
 }
