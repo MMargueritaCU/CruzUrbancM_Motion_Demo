@@ -44,6 +44,7 @@ dayMonsterTL.to("#tail", {duration:switchTime, rotation: -45, y:375, ease: "none
 
             .to("#bowtie", {duration:2, rotation:90, y:400, ease: "none"}, "startAnimation")
             .from("#cap", {duration:switchTime, y:-100, ease: "none"}, "startAnimation")
+            .to("#capCircle", {duration:0.75, y:5, yoyo:true, repeat:1, ease: "none"}, "startAnimation")
             .to("#dayBackground", {duration:switchTime, fill: darkBlue, ease: "none"}, "startAnimation")
             
             .to("#head", {duration:switchTime, fill: darkRed, ease: "none"}, "startAnimation")
@@ -68,8 +69,8 @@ sparkleTL.to("#sparkle1", {duration:1, rotation: 45, ease: "none", yoyo:true, re
         .to("#sparkle2", {duration:1, rotation: -45, ease: "none", yoyo:true, repeat:3, scale:.25, alpha:0.5}, "startSparkles")
         .to("#sparkle3", {duration:1, rotation: 45, ease: "none", yoyo:true, repeat:3, scale:.75, alpha:0.5}, "startSparkles")
         .to("#bowtie", {duration:1, scaleX:1.5, rotation:5, ease: "none", yoyo:true, repeat:1}, "startSparkles")
-        .to("#leftLeg", {duration:1, rotation:-10, ease: "none", yoyo:true, repeat:1}, "startSparkles")
-        .to("#rightLeg", {duration:1, rotation:10, ease: "none", yoyo:true, repeat:1}, "startSparkles")
+        .to("#leftLeg", {duration:1, rotation:-10, ease: "none", yoyo:true, repeat:2}, "startSparkles")
+        .to("#rightLeg", {duration:1, rotation:10, ease: "none", yoyo:true, repeat:2}, "startSparkles")
         .to("#sparkle1", {duration:1, ease: "none", scale:0, alpha:0}, "startFade")
         .to("#sparkle2", {duration:1, ease: "none", scale:0, alpha:0}, "startFade")
         .to("#sparkle3", {duration:1, ease: "none", scale:0, alpha:0}, "startFade");
@@ -85,7 +86,7 @@ zSymbolsTL.to("#zSymbols", {duration:zTime, alpha:1})
         .to("#smallZ", {duration:zTime, scale:.5, yoyo:true, repeat:1, ease: "none"}, "startZ")
         .to("#mediumZ", {duration:zTime, scale:.5, yoyo:true, repeat:1, ease: "none"})
         .to("#bigZ", {duration:zTime, scale:.5, yoyo:true, repeat:1, ease: "none"})
-        .to("#tail", {duration:0.75, transformOrigin: "right", rotation:0.005, x:60, yoyo:true, repeat:1, ease: "none"}, "startZ");
+        .to("#tail", {duration:0.75, transformOrigin: "right", rotation:-30, yoyo:true, repeat:1, ease: "none"}, "startZ");
 
 export function zSymbolsAnimation(){
     return zSymbolsTL;
